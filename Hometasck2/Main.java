@@ -28,6 +28,8 @@ public class Main {
                 }
             }
 
+        } else {
+            System.out.println("Class don`t have annotation `SaveTo`");
         }
     }
 }
