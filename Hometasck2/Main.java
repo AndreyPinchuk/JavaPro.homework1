@@ -20,9 +20,7 @@ public class Main {
                 if (method.isAnnotationPresent(Saver.class)) {
                     try {
                         method.invoke(textContainer, path);
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    } catch (InvocationTargetException e) {
+                    } catch (IllegalAccessException | InvocationTargetException e) {
                         e.printStackTrace();
                     } finally {
                         System.out.println("Complet!");
